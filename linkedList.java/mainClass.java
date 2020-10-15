@@ -1,10 +1,10 @@
-package linkedList;
+package generic;
 
 public class mainClass {
 
-  public static void main(String[] args) {
-   linkedList myll=new linkedList();
-   linkedList myll2=new linkedList();
+  public static void main(String[] args){
+   linkedListG<Integer> myll=new linkedListG<>();
+   linkedListG<Integer> myll2=new linkedListG<>();
   
   System.out.print("my 1st linked list:-");
   myll.add(2);
@@ -39,5 +39,6 @@ public class mainClass {
     System.out.print("concatenation of 1st and 2nd linked list:-");
      myll.concat(myll.head,myll2.head);
      myll.display();
+     
   }
 }
